@@ -1,0 +1,20 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/2.2.1
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/PalomoIFCA/testerforpyophidia:
+      branch: positive
+      repo: https://github.com/PalomoIFCA/testerforpyophidia
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Sty:
+    repos:
+      github.com/PalomoIFCA/testerforpyophidia PyOphidia:
+        commands:
+        - /usr/bin/env sh .sqa/script.lousy-maroon-insect.sh
+        container: qc.sty_pasty-russet-robin
+timeout: 5400
