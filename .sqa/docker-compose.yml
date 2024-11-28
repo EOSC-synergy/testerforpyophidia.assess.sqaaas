@@ -1,5 +1,5 @@
 services:
-  qc.sty_pasty-russet-robin:
+  qc.sty_wimpy-malachite-hamster:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/Ophidia
       dockerfile: Dockerfile

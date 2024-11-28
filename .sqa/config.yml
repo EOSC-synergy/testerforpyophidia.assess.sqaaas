@@ -15,6 +15,6 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerforpyophidia PyOphidia:
         commands:
-        - /usr/bin/env sh .sqa/script.lousy-maroon-insect.sh
-        container: qc.sty_pasty-russet-robin
+        - /usr/bin/env sh .sqa/script.lousy-lemon-chicken.sh
+        container: qc.sty_wimpy-malachite-hamster
 timeout: 5400
