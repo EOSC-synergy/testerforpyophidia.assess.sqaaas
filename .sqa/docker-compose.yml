@@ -1,5 +1,5 @@
 services:
-  qc.sty_seedy-red-bear:
+  qc.sty_lumpy-crimson-owl:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/Ophidia
       dockerfile: Dockerfile

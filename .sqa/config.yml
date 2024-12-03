@@ -13,8 +13,8 @@ environment:
 sqa_criteria:
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerforpyophidia Ophidia:
+      github.com/PalomoIFCA/testerforpyophidia PyOphidia:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-corn-bordeaux.sh
-        container: qc.sty_seedy-red-bear
+        - /usr/bin/env sh .sqa/script.geeky-turquoise-seal.sh
+        container: qc.sty_lumpy-crimson-owl
 timeout: 5400

@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerforpyophidia &&
-    Ophidia --path .
+    PyOphidia --path .
 )
