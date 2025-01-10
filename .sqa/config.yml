@@ -2,19 +2,45 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/2.2.1
+      branch: main
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerforpyophidia:
-      branch: positive
+      branch: main
       repo: https://github.com/PalomoIFCA/testerforpyophidia
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
-  QC.Sty:
+  QC.Acc:
     repos:
-      github.com/PalomoIFCA/testerforpyophidia PyOphidia:
+      github.com/PalomoIFCA/testerforpyophidia git:
         commands:
-        - /usr/bin/env sh .sqa/script.geeky-turquoise-seal.sh
-        container: qc.sty_lumpy-crimson-owl
+        - /usr/bin/env sh .sqa/script.skinny-olive-eel.sh
+        container: qc.acc_bumpy-pink-emu
+  QC.Doc:
+    repos:
+      github.com/PalomoIFCA/testerforpyophidia find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.nippy-zucchini-chicken.sh
+        container: qc.doc_silly-aquamarine-uguisu
+      github.com/PalomoIFCA/testerforpyophidia git:
+        commands:
+        - /usr/bin/env sh .sqa/script.whiny-firebrick-penguin.sh
+        container: qc.doc_pasty-indigo-lemur
+      github.com/PalomoIFCA/testerforpyophidia markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.shaggy-silver-ragdoll.sh
+        container: qc.doc_hazy-sepia-moose
+  QC.Lic:
+    repos:
+      github.com/PalomoIFCA/testerforpyophidia licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.sloppy-rust-baboon.sh
+        container: qc.lic_ready-azure-molly
+  QC.Ver:
+    repos:
+      github.com/PalomoIFCA/testerforpyophidia get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.nerdy-silver-newfoundland.sh
+        container: qc.ver_boozy-lemon-collie
 timeout: 5400
