@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerforpyophidia &&
-    PyOphidia --path .
+    bandit -f json --quiet  --confidence-level high --severity-level high --recursive  .
 )
