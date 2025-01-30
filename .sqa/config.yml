@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: main
+      branch: release/2.3.0
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/PalomoIFCA/testerforpyophidia:
       branch: main
@@ -15,32 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerforpyophidia git:
         commands:
-        - /usr/bin/env sh .sqa/script.skinny-olive-eel.sh
-        container: qc.acc_bumpy-pink-emu
+        - /usr/bin/env sh .sqa/script.shaggy-wheat-camel.sh
+        container: qc.acc_cozy-harlequin-mayfly
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerforpyophidia find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-zucchini-chicken.sh
-        container: qc.doc_silly-aquamarine-uguisu
+        - /usr/bin/env sh .sqa/script.lousy-plum-llama.sh
+        container: qc.doc_gamy-olive-liger
       github.com/PalomoIFCA/testerforpyophidia git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-firebrick-penguin.sh
-        container: qc.doc_pasty-indigo-lemur
+        - /usr/bin/env sh .sqa/script.dorky-denim-forest.sh
+        container: qc.doc_shaggy-celadon-tarantula
       github.com/PalomoIFCA/testerforpyophidia markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shaggy-silver-ragdoll.sh
-        container: qc.doc_hazy-sepia-moose
+        - /usr/bin/env sh .sqa/script.snippy-wheat-clam.sh
+        container: qc.doc_skinny-emerald-drever
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerforpyophidia licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-rust-baboon.sh
-        container: qc.lic_ready-azure-molly
+        - /usr/bin/env sh .sqa/script.muzzy-lilac-boar.sh
+        container: qc.lic_lanky-saffron-mouse
+  QC.Sty:
+    repos:
+      github.com/PalomoIFCA/testerforpyophidia PyOphidia:
+        commands:
+        - /usr/bin/env sh .sqa/script.lumpy-burgundy-serval.sh
+        container: qc.sty_foggy-aquamarine-moth
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerforpyophidia get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-silver-newfoundland.sh
-        container: qc.ver_boozy-lemon-collie
+        - /usr/bin/env sh .sqa/script.flaky-goldenrod-liger.sh
+        container: qc.ver_breezy-grey-bombay
 timeout: 5400
