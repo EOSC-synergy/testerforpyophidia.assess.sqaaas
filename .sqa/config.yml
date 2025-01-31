@@ -15,50 +15,50 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerforpyophidia git:
         commands:
-        - /usr/bin/env sh .sqa/script.flimsy-cerise-oriole.sh
-        container: qc.acc_hilly-crimson-deer
+        - /usr/bin/env sh .sqa/script.squirrely-brown-bloodhound.sh
+        container: qc.acc_gloppy-pink-kangaroo
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerforpyophidia find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.flabby-rust-dingo.sh
-        container: qc.doc_muzzy-denim-wolf
+        - /usr/bin/env sh .sqa/script.flaky-xanthic-hare.sh
+        container: qc.doc_squirrely-rust-cat
       github.com/PalomoIFCA/testerforpyophidia git:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-gamboge-dogfish.sh
-        container: qc.doc_jumpy-periwinkle-saola
+        - /usr/bin/env sh .sqa/script.muzzy-russet-chicken.sh
+        container: qc.doc_dorky-aqua-butterfly
       github.com/PalomoIFCA/testerforpyophidia markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-thistle-horse.sh
-        container: qc.doc_skanky-green-elephant
+        - /usr/bin/env sh .sqa/script.smelly-platinum-sloth.sh
+        container: qc.doc_cheeky-cerulean-barnacle
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerforpyophidia licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.smelly-mauve-eagle.sh
-        container: qc.lic_snazzy-ivory-hyena
+        - /usr/bin/env sh .sqa/script.hasty-seashell-mandrill.sh
+        container: qc.lic_greasy-platinum-jellyfish
   QC.Sec:
     repos:
       github.com/PalomoIFCA/testerforpyophidia bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-ultramarine-uakari.sh
-        container: qc.sec_pretty-red-tzu
+        - /usr/bin/env sh .sqa/script.scummy-tomato-chinchilla.sh
+        container: qc.sec_lanky-orange-centipede
   QC.Sty:
     repos:
-      github.com/PalomoIFCA/testerforpyophidia flake8:
+      github.com/PalomoIFCA/testerforpyophidia PyOphidia:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-dandelion-quoll.sh
-        container: qc.sty_sleazy-chartreuse-insect
+        - /usr/bin/env sh .sqa/script.baggy-wisteria-chinchilla.sh
+        container: qc.sty_pretty-bronze-guppy
   QC.Uni:
     repos:
       github.com/PalomoIFCA/testerforpyophidia pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-scarlet-mole.sh
-        container: qc.uni_ugly-myrtle-bracke
+        - /usr/bin/env sh .sqa/script.skinny-tangerine-gopher.sh
+        container: qc.uni_droopy-ochre-hare
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerforpyophidia get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.queasy-bistre-mule.sh
-        container: qc.ver_lanky-puce-koala
+        - /usr/bin/env sh .sqa/script.smelly-ruby-malamute.sh
+        container: qc.ver_baggy-azure-frigatebird
 timeout: 5400
