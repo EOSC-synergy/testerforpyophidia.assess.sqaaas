@@ -15,38 +15,38 @@ sqa_criteria:
     repos:
       github.com/PalomoIFCA/testerforpyophidia git:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-gold-hamster.sh
-        container: qc.acc_ready-crimson-bombay
+        - /usr/bin/env sh .sqa/script.smelly-beige-rattlesnake.sh
+        container: qc.acc_homey-pumpkin-terrier
   QC.Doc:
     repos:
       github.com/PalomoIFCA/testerforpyophidia find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snippy-pumpkin-chow.sh
-        container: qc.doc_squirrely-amaranth-lobster
+        - /usr/bin/env sh .sqa/script.silly-mustard-shrew.sh
+        container: qc.doc_sleazy-maroon-gecko
       github.com/PalomoIFCA/testerforpyophidia git:
         commands:
-        - /usr/bin/env sh .sqa/script.ugly-mustard-monster.sh
-        container: qc.doc_gimpy-pear-dachshund
+        - /usr/bin/env sh .sqa/script.boozy-smalt-kakapo.sh
+        container: qc.doc_dorky-burgundy-uguisu
       github.com/PalomoIFCA/testerforpyophidia markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-beige-lemming.sh
-        container: qc.doc_frumpy-sepia-sheepdog
+        - /usr/bin/env sh .sqa/script.trippy-magnolia-stingray.sh
+        container: qc.doc_lovely-cornflower-cattle
   QC.Lic:
     repos:
       github.com/PalomoIFCA/testerforpyophidia licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.sleepy-malachite-moose.sh
-        container: qc.lic_ready-sapphire-meerkat
+        - /usr/bin/env sh .sqa/script.snazzy-platinum-kudu.sh
+        container: qc.lic_sleazy-plum-axolotl
   QC.Sty:
     repos:
       github.com/PalomoIFCA/testerforpyophidia PyOphidia:
         commands:
-        - /usr/bin/env sh .sqa/script.frumpy-sapphire-foxhound.sh
-        container: qc.sty_snappy-charcoal-retriever
+        - /usr/bin/env sh .sqa/script.sleazy-chartreuse-balinese.sh
+        container: qc.sty_slaphappy-vermilion-jellyfish
   QC.Ver:
     repos:
       github.com/PalomoIFCA/testerforpyophidia get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-coral-ladybird.sh
-        container: qc.ver_greasy-brass-manatee
+        - /usr/bin/env sh .sqa/script.squeaky-red-starfish.sh
+        container: qc.ver_snoopy-gold-bat
 timeout: 5400
