@@ -5,5 +5,5 @@
 
 (
 cd github.com/PalomoIFCA/testerforpyophidia &&
-    flake8 . --exclude
+    flake8 .
 )
